@@ -1,0 +1,120 @@
+
+<div class="navbar navbar-default navbar-fixed-top" role='navigation'>
+	<nav class="main-header">
+		<div class="container fadein">
+			<div id="header" role="navigation" class="navbar navbar-default">
+				<div class="logo-wrapper">
+					<a href="/">
+						<figure class="logo" title="PLAAK">
+							<img src="img/logo.png" alt="">
+							
+						</figure>
+						<span class="nethash text-center" ng-if="showNethash(blockStatus.nethash | nethash)">{{blockStatus.nethash | nethash}}</span>
+					</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-left">
+							<!--<currency-selector />-->
+							<li class="dropdown" data-uib-dropdown>
+								<a href id="main-menu-dropdown" class="dropdown-toggle tools-menu" data-uib-dropdown-toggle data-aria-haspopup="true" role="button" data-aria-expanded="false">PRODUCTS <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu" data-aria-labelledby="main-menu-dropdown">
+									<li>
+										<a href="https://explorer.plaak.com" class="top-accounts">Phaeton Explorer</a>
+									</li>
+									<li>
+										<a href="https://wallet.plaak.com" class="top-accounts" target="_blank">Phaeton Wallet</a>
+									</li>
+									
+									
+									<li>
+										<a href="https://plaak.freshdesk.com/support/home" class="top-accounts" target="_blank">Exchange</a>
+									</li>
+									<li>
+										<a href="https://plaak.freshdesk.com/support/home" class="top-accounts" target="_blank">Core</a>
+									</li>
+									<li>
+										<a href="https://plaak.com/investments/" class="activity-graph" target="_blank">Investments</a>
+									</li>
+									<li>
+										<a href="https://freelance.plaak.com/" class="activity-graph" target="_blank">Freelance</a>
+									</li>
+									<li>
+										<a href="https://plaak.com/coming-soon.php" class="activity-graph" target="_blank">Health</a>
+									</li>
+									<li>
+										<a href="https://plaak.com/coming-soon.php" class="activity-graph" target="_blank">Business Suite</a>
+									</li>
+									<li>
+										<a href="https://plaak.com/coming-soon.php" class="activity-graph" target="_blank">E-market</a>
+									</li>
+									
+								</ul>
+							</li>
+
+							<li class="dropdown" data-uib-dropdown>
+								<a href id="main-menu-dropdown" class="dropdown-toggle tools-menu" data-uib-dropdown-toggle data-aria-haspopup="true" role="button" data-aria-expanded="false">PHAETON <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu" data-aria-labelledby="main-menu-dropdown">
+
+									
+									<li>
+										<a href="https://phaeton.plaak.com/" target="_blank" class="top-accounts">Phaeton</a>
+									</li>
+									<li>
+										<a href="/topAccounts" class="top-accounts">Top Accounts</a>
+									</li>
+									<!--<li>
+										<a href="/activityGraph" class="activity-graph">Activity Graph</a>
+									</li>-->
+									<li>
+										<a href="/delegateMonitor" class="delegate-monitor">Delegate Section</a>
+									</li>
+									<!--<li data-ng-if="$root.marketWatcher">
+										<a href="/marketWatcher" class="market-watcher">Market Watcher</a>
+									</li>-->
+									<li>
+										<a href="/networkMonitor" class="network-monitor">Networks Section</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="https://plaak.freshdesk.com/support/home" class="" target="_blank">SUPPORT</a></li>
+							<li class="no-after"><a href="https://discordapp.com/invite/F44Ybhj?url=https://plaak.com/&amp;text=PLAAK" style="width:200px !important;" target="_blank"><img src="../../assets/images/discord-icon.png" style="width:14% !important" /></a></li>
+					</ul>
+				
+
+				<button type="button" class="navbar-toggle" data-ng-click="$root.isCollapsed = !$root.isCollapsed">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<search class="visible-xs mobile-search" mobile-view="true" />
+				<div class="navbar-collapse main-menu" data-ng-class="{collapse: $root.isCollapsed}">
+					
+				</div>
+
+				<search class="hidden-xs desktop-search" />
+			</div>
+		</div>
+	</nav>
+	<nav class="network-status">
+		<div class="container fadein" data-ng-show="blockStatus">
+			<div class="flex-container1">
+				<div class="height-total orange">
+					<p class="big-details"> {{blockStatus.height | number:0}}</p>
+					<p>Height</p>
+				</div>
+			</div>
+
+			<div class="flex-container1">
+				<div class="height-total orange">
+					<p class="big-details"> {{blockStatus.supply | plkx | number:0}}</p>
+					<p>Supply</p>
+				</div>
+			</div>
+
+				<!--<span class="phaeton-btc"><b>PHA/BTC:</b> {{currency.tickers.PHA.BTC || 'N/A'}}</span>
+				<span class="phaeton-usd"><b>PHA/{{currency.tickers.PHA[currency.symbol] && currency.symbol !== 'BTC' ? currency.symbol : 'USD'}}:</b> {{currency.tickers.PHA[currency.symbol] && currency.symbol !== 'BTC' ? (currency.tickers.PHA[currency.symbol] | number:4) : (currency.tickers.LSK.USD | number:4) || 'N/A'}}</span>-->
+			</div>
+		</div>
+	</nav>
+</div>
