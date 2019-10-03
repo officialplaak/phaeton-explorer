@@ -1,9 +1,9 @@
 {
-  "name": "plaak-PHAETON-explorer",
+  "name": "phaeton-PHAETON-explorer",
   "version": "0.0.1-beta",
-  "description": "PLAAK PHAETON",
+  "description": "PHAETON PHAETON",
   "keywords": [
-    "plaak",
+    "phaeton",
     "blockchain",
     "PHAETON"
   ],
@@ -16,7 +16,7 @@
     "url": "https://rajeshvnair@bitbucket.org/anoopsam/plaak_explorer/issues"
   },
   "private": true,
-  "author": "Plaak Foundation>",
+  "author": "Phaeton Foundation>",
   "license": "GPL-3.0",
   "main": "app.js",
   "engines": {

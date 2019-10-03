@@ -54,8 +54,8 @@ module.exports = () => ({
 		compress: true,
 		port: 9001,
 		proxy: {
-			'/socket.io': 'https://core.plaak.com:443',
-			'/api': 'https://core.plaak.com:443/api/',
+			'/socket.io': 'https://core.phaeton.com:443',
+			'/api': 'https://core.phaeton.com:443/api/',
 		},
 	},
 	resolve: {

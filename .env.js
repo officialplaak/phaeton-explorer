@@ -1,0 +1,4 @@
+FREEGEOIP_HOST = core.plaak.com
+FREEGEOIP_PORT = 443
+REDIS_HOST = core.plaak.com
+REDIS_PORT = 443

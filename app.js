@@ -13,7 +13,7 @@ const request = require('request');
 const fs = require('fs');
 
 const certFile = path.resolve(__dirname, 'cer/gd_bundle-g2-g1.crt');
-const keyFile = path.resolve(__dirname, 'cer/plaak.key');
+const keyFile = path.resolve(__dirname, 'cer/phaeton.key');
 const caFile = path.resolve(__dirname, 'cer/certificate.pem');
 
 

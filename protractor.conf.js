@@ -22,6 +22,6 @@ exports.config = {
 	params: {
 		screenshotFolder: 'e2e-test-screenshots',
 		baseURL: 'http://localhost',
-		CoreURL: 'https://core.plaak.com:443',
+		CoreURL: 'https://core.phaeton.com:443',
 	},
 };
