@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "amstock3": "github:amcharts/amstock3",
-    "angular": "<=1.6.10",
+    "angular": "<=1.8.1",
     "angular-advanced-searchbox": "github:reyraa/angular-advanced-searchbox",
     "angular-animate": "^1.6.4",
     "angular-gettext": "^2.3.9",
